@@ -1,0 +1,28 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font: normal normal 18px Arial;
+}
+
+img {
+    width: 100%;
+}
+
+p {
+    margin: 10px;
+}
+
+button {
+    margin: 10px;
+    padding: 10px 30px;
+    background-color: rgb(168, 0, 0);
+    color: white;
+    font: normal bolder 1em Arial;
+    border: 1px solid black;
+}
