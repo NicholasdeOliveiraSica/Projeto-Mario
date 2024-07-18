@@ -77,7 +77,8 @@ p {
     position: fixed;
     top: -3px;
     left: 0;
-    width: 100vw;
+    min-width: 100%;
+    min-height: 100%;
 }
 
 #mascara {
@@ -121,7 +122,67 @@ button {
 }
 
 button:hover {
-    background-color: #8f0e0e;
-    color: rgb(199, 199, 199);
-    box-shadow: inset 2px 2px 3px rgba(0, 0, 0, 0.589);
+    background-color: #be0d0d;
+    color: rgb(190, 190, 190);
+    box-shadow: inset 2px 2px 3px rgba(0, 0, 0, 0.384);
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    position: fixed;
+    top: 50%;
+    left: -140px;
+    background: white;
+    transform: translate(-50%, -50%);
+    z-index: 3;
+    width: 300px;
+    border-radius: 10px;
+    padding: 30px
+}
+
+form * {
+    position: relative;
+    padding: 10px;
+}
+
+form p {
+    padding: 0;
+    color: black;
+    font: normal bold 18px Arial;
+    text-align: center;
+}
+
+form input {
+    width: 100%;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+form textarea {
+    min-width: 240px;
+    max-width: 240px;
+    min-height: 100px;
+    max-height: 200px;
+    border-radius: 5px;
+    border: 1px solid black;
+}
+
+form button {
+    border-radius: 15px;
+    width: 240px;
+    height: 60px;
+}
+
+#mascara-form {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 2;
+    filter: blur(50%);
+    background-color: rgba(0, 0, 0, 0.7);
 }
