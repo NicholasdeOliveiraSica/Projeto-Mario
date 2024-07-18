@@ -23,11 +23,12 @@ header a {
     color: white;
     text-decoration: none;
     font: normal bolder 20px Arial;
-    transition-duration: .3s;
 }
 
 header a:hover {
     color: #C51111;
+    font-size: 26px;
+    transition: .3s ease-in-out;
 }
 
 header img {
@@ -116,4 +117,11 @@ button {
     font-weight: bold;
     cursor: pointer;
     text-transform: uppercase;
+    box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.589);
+}
+
+button:hover {
+    background-color: #8f0e0e;
+    color: rgb(199, 199, 199);
+    box-shadow: inset 2px 2px 3px rgba(0, 0, 0, 0.589);
 }
