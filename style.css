@@ -127,19 +127,21 @@ button:hover {
     box-shadow: inset 2px 2px 3px rgba(0, 0, 0, 0.384);
 }
 
-form {
+form.form-fale-conosco {
     display: flex;
     flex-direction: column;
     gap: 20px;
+
     position: fixed;
-    top: 50%;
-    left: -140px;
-    background: white;
+    top: 50%; left: -140px;
     transform: translate(-50%, -50%);
+
+    background: white;
     z-index: 3;
     width: 300px;
     border-radius: 10px;
-    padding: 30px
+    padding: 30px;
+    transition-duration: 1s;
 }
 
 form * {
@@ -184,5 +186,5 @@ form button {
     height: 100vh;
     z-index: 2;
     filter: blur(50%);
-    background-color: rgba(0, 0, 0, 0.7);
+    background-color: rgba(0, 0, 0, 0.85);
 }

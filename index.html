@@ -14,7 +14,7 @@
     <header>
         <img src="img/logo-header.png" alt="Mario Cabeça">
         <a href="">Home</a>
-        <a href="">Nossos Serviços</a>
+        <a href="#"  onclick="cliqueiNoBotao()" >Nossos Serviços</a>
         <a href="">Fale Conosco</a>
     </header>
 
@@ -31,7 +31,7 @@
             <p>Você já se encontrou em uma situação de emergencia com encanamento? Vazamento e torneiras ou problemas
                 com amáquina de lavar? Eles serão sua solução, chame Mario e Luigi!</p>
 
-            <button>Entre em contato</button>
+            <button onclick="cliqueiNoBotao()">Entre em contato</button>
 
         </div>
 
@@ -56,9 +56,7 @@
         </a>
     </div>
 
-    <div id="mascara-form"></div>
-
-    <form class="fale-conosco">
+    <form class="form-fale-conosco">
         <p>Fale Conosco</p>
         <input placeholder="Seu Nome">
         <input placeholder="Telefone">
@@ -66,6 +64,8 @@
         <button>Pedir Orçamento</button>
     </form>
 
-</body>
+    <div id="mascara-form" onclick="cliqueiFora()"></div>
 
+</body>
+<script src="scripts.js"></script>
 </html>
