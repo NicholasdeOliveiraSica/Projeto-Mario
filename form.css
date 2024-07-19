@@ -3,7 +3,7 @@
 form {
     z-index: 2;
     position: fixed;
-    top: 50%; left: -145px;
+    top: 50%; left: -150px;
     transform: translate(-50%, -50%);
     width: 300px;
     background-color: white;

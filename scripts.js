@@ -25,6 +25,6 @@ function formVem(){
 }
 
 function formVai(){
-    form.style.left = "-145px"
+    form.style.left = "-150px"
     formMask.style.display = "none"
 }
