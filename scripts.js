@@ -1,80 +1,30 @@
+const menuOpen = document.querySelector("nav.open")
+const txtMenuOpen = document.querySelector("nav.open a")
+const menuClose = document.querySelector("nav.bloco")
+const focusMask = document.querySelector("div.focus-mask")
+const formMask = document.querySelector("div.form-mask")
+const form = document.querySelector("form.form-fale-conosco")
 
-const form = document.querySelector(".form-fale-conosco")
-const mask = document.querySelector("#mascara-form")
+function menuAbrindo(){
+    menuOpen.style.top = "20px"
+    menuOpen.style.right = "20px"
+    menuClose.style.visibility = "hidden"
+    focusMask.style.display = "block"
+}
 
+function menuFechando(){
+    menuOpen.style.top = "-50%"
+    menuOpen.style.right = "-50%"
+    menuClose.style.visibility = "visible"
+    focusMask.style.display = "none"
+}
 
-function mostrarForm(){
+function formVem(){
     form.style.left = "50%"
-    mask.style.display = "block"
+    formMask.style.display = "block"
 }
 
-function esconderForm(){
-    form.style.left = "-140px"
-    mask.style.display = "none"
+function formVai(){
+    form.style.left = "-145px"
+    formMask.style.display = "none"
 }
-
-/* EVENTOS
-
-    -tudo que acontece é um evento
-        -hover
-    -eventos predeterminados
-        -on'x'
-            -onclick
-            -onmouseenter
-            -onmouseout
-            -TUDO NO HTML, NA ABERTURA DA TAG
-    -puxa função quando ocorre o evento
-        -onclick="função()"
-            -inicia a function 'função()'
-*/
-
-
-/* Estudos
-
-    3 jeitos de criar variavel
-        espaço de memoria reservado para guardar uma info
-
-        -var   / antigo (n usar)
-            -pobre
-
-        -let   / variavel (alteravel)
-            -caso necessário
-
-        -const / constante (n alteravel)
-            -principal
-
-    o que guardar
-        -texto  ('X')
-        -numero ( X )
-*/
-
-//const numero1 = 100
-//const numero2 = 300
-//const numeroTotal = numero1 + numero2
-//
-//console.log(numeroTotal)
-// apareceu 400
-
-
-/* Estudos
-
-    Funções
-        -Trecho de código que só é executado quando é chamado
-
-*/
-
-/* const abacate = "Oi, sou um abacate"
-const pera = "Oi, sou uma pera"
-const numero1 = 100
-const numero2 = 200
-
-    function soma() {
-        const somatoria = numero1 + numero2
-        console.log(somatoria)
-    }
-
-console.log(pera)
-
-soma() */
-
-
