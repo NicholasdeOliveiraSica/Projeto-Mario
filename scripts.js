@@ -3,12 +3,12 @@ const form = document.querySelector(".form-fale-conosco")
 const mask = document.querySelector("#mascara-form")
 
 
-function cliqueiNoBotao(){
+function mostrarForm(){
     form.style.left = "50%"
     mask.style.display = "block"
 }
 
-function cliqueiFora(){
+function esconderForm(){
     form.style.left = "-140px"
     mask.style.display = "none"
 }

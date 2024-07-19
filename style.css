@@ -127,7 +127,7 @@ button:hover {
     box-shadow: inset 2px 2px 3px rgba(0, 0, 0, 0.384);
 }
 
-form.form-fale-conosco {
+.form-fale-conosco {
     display: flex;
     flex-direction: column;
     gap: 20px;
@@ -144,25 +144,29 @@ form.form-fale-conosco {
     transition-duration: 1s;
 }
 
-form * {
+.form-fale-conosco * {
     position: relative;
     padding: 10px;
 }
 
-form p {
+.form-fale-conosco p {
     padding: 0;
     color: black;
     font: normal bold 18px Arial;
     text-align: center;
 }
 
-form input {
+.form-fale-conosco input {
     width: 100%;
     border: 1px solid black;
     border-radius: 5px;
 }
 
-form textarea {
+.form-fale-conosco input:hover {
+    border: 1px solid rgb(0, 182, 0);
+}
+
+.form-fale-conosco textarea {
     min-width: 240px;
     max-width: 240px;
     min-height: 100px;
@@ -171,7 +175,7 @@ form textarea {
     border: 1px solid black;
 }
 
-form button {
+.form-fale-conosco button {
     border-radius: 15px;
     width: 240px;
     height: 60px;
@@ -187,4 +191,5 @@ form button {
     z-index: 2;
     filter: blur(50%);
     background-color: rgba(0, 0, 0, 0.85);
+    transition: display 0.5s ease-in-out;
 }
