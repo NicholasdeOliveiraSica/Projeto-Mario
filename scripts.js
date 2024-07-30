@@ -6,15 +6,14 @@ const formMask = document.querySelector("div.form-mask")
 const form = document.querySelector("form.form-fale-conosco")
 
 function menuAbrindo(){
-    menuOpen.style.top = "5px"
-    menuOpen.style.right = "5px"
+    menuOpen.style.top = "-10px"
+    menuOpen.style.right = "0"
     menuClose.style.visibility = "hidden"
     focusMask.style.display = "block"
 }
 
 function menuFechando(){
-    menuOpen.style.top = "-50%"
-    menuOpen.style.right = "-50%"
+    menuOpen.style.right = "-100%"
     menuClose.style.visibility = "visible"
     focusMask.style.display = "none"
 }
